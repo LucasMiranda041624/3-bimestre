@@ -1,0 +1,16 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro impares = 1
+
+		enquanto(impares <= 50){
+			escreva(impares ,"\n")
+			
+			impares = impares + 2
+			
+		}
+		
+	}
+}
