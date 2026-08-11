@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real A = 80000
+		real B =200000
+		inteiro anos = 0
+
+		enquanto (A<B)
+		{
+			A = A + (A*0.03)
+			B = B + (B*0.015)
+			anos++
+		}
+             escreva("Serão necessários: ", anos," anos. \n")
+	        escreva("população da cidade A:", A, "\n")
+	        escreva("população de B:", B,"\n")
+	}
+	
+}
