@@ -1,0 +1,24 @@
+programa
+{
+	funcao inicio()
+	{
+		real base, resultado = 1.0
+		inteiro expoente, i
+
+		escreva("Digite o valor da base: ")
+		leia(base)
+
+		escreva("Digite o valor do expoente (número inteiro): ")
+		leia(expoente)
+
+		
+		para (i = 1; i <= expoente; i++)
+		{
+			resultado = resultado * base
+		}
+
+		escreva("\n---------------------------")
+		escreva("\n", base, " elevado a ", expoente, " é igual a: ", resultado)
+		escreva("\n---------------------------\n")
+	}
+}
