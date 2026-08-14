@@ -1,0 +1,32 @@
+programa
+{
+	funcao inicio()
+	{
+		real base_num
+		inteiro expoente_num
+
+		escreva("Digite o valor da base: ")
+		leia(base_num)
+
+		escreva("Digite o valor do expoente (número inteiro): ")
+		leia(expoente_num)
+
+		calcular_potencia(base_num, expoente_num)
+	}
+
+	funcao calcular_potencia(real base, inteiro expoente)
+	{
+		real resultado = 1.0
+		inteiro i
+		
+		para (i = 1; i <= expoente; i++)
+		{
+			resultado = resultado * base
+		}
+
+		escreva("\n---------------------------")
+		escreva("\n[Resultado via Função]")
+		escreva("\n", base, " elevado a ", expoente, " é igual a: ", resultado)
+		escreva("\n---------------------------\n")
+	}
+}
