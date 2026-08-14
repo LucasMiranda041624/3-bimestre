@@ -1,0 +1,37 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro N, i
+		real numero, menor = 0.0, maior = 0.0, soma = 0.0
+
+		escreva("Quantidade de números (N): ")
+		leia(N)
+
+		para (i = 1; i <= N; i++)
+		{
+			
+			faca {
+				escreva("Digite o ", i, "º número (0 a 1000): ")
+				leia(numero)
+
+				se (numero < 0 ou numero > 1000) {
+					escreva("Valor inválido! O número deve estar entre 0 e 1000.\n")
+				}
+			} enquanto (numero < 0 ou numero > 1000)
+
+			soma = soma + numero
+
+			se (i == 1) {
+				menor = numero
+				maior = numero
+			} senao {
+				se (numero < menor) menor = numero
+				se (numero > maior) maior = numero1
+			
+			}
+		}
+
+		escreva("\nMenor: ", menor, "\nMaior: ", maior, "\nSoma: ", soma)
+	}
+}
