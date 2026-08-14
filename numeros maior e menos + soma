@@ -1,0 +1,29 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro N, i
+		real num, menor = 0.0, maior = 0.0, soma = 0.0
+
+		escreva("Quantidade de números (N): ")
+		leia(N)
+
+		para (i = 1; i <= N; i++)
+		{
+			escreva("Digite o ", i, "º número: ")
+			leia(num)
+
+			soma = soma + num
+
+			se (i == 1) {
+				menor = num
+				maior = num
+			} senao {
+				se (num < menor) menor = num
+				se (num > maior) maior = num
+			}
+		}
+
+		escreva("\nMenor: ", menor, "\nMaior: ", maior, "\nSoma: ", soma)
+	}
+}
