@@ -1,0 +1,20 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro t1 = 0, t2 = 1, proximo = 0
+
+		escreva("Série de Fibonaci até ultrapassar 500:\n")
+		escreva(t1, ", ", t2)
+
+		enquanto (proximo <= 500)
+		{
+			proximo = t1 + t2
+			escreva(", ", proximo)
+
+			t1 = t2
+			t2 = proximo
+		}
+		escreva("\n")
+	}
+}
